@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Mailtap",
+        "short_desc": "Email management & automation",
+        "category": "productivity",
+        "icon": "📧",
+        "back_title": "Mailtap",
+        "features": [
+            "Interact with email accounts",
+            "Read, send, search messages",
+            "Automation-ready for workflows"
+        ],
+        "status": "available",
+        "url": "https://clawhub.ai/zororaka00/mailtap"
+    },
+    {
+        "name": "IDX Stock",
+        "short_desc": "IDX company profile scraper",
+        "category": "finance",
+        "icon": "📈",
+        "back_title": "IDX Stock Profile",
+        "features": [
+            "Fetch company data from idx.co.id",
+            "English-translated fields",
+            "Secure static scraping"
+        ],
+        "status": "available",
+        "url": "https://clawhub.ai/zororaka00/idx-stock"
+    }
+]
