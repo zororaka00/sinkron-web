@@ -1,6 +1,6 @@
 [
     {
-        "name": "mailTap",
+        "name": "mailtap",
         "short_desc": "Temporary Email Service for privacy & verification",
         "category": "utilities",
         "icon": "📧",
