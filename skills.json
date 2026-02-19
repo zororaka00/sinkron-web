@@ -1,20 +1,20 @@
 [
     {
-        "name": "Mailtap",
-        "short_desc": "Email management & automation",
-        "category": "productivity",
+        "name": "mailTap",
+        "short_desc": "Temporary Email Service for privacy & verification",
+        "category": "utilities",
         "icon": "📧",
-        "back_title": "Mailtap",
+        "back_title": "MailTap - Temporary Email",
         "features": [
-            "Interact with email accounts",
-            "Read, send, search messages",
-            "Automation-ready for workflows"
+            "Generate disposable email addresses (valid 30 mins)",
+            "Fetch inbox messages & details",
+            "Download attachments securely with validation"
         ],
         "status": "available",
         "url": "https://clawhub.ai/zororaka00/mailtap"
     },
     {
-        "name": "IDX Stock",
+        "name": "idx-stock",
         "short_desc": "IDX company profile scraper",
         "category": "finance",
         "icon": "📈",
