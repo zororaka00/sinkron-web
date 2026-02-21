@@ -37,7 +37,6 @@
             "Upload, download, list, and delete objects",
             "AWS Signature V4 compatible authentication",
             "Secure credential handling via environment variables",
-            "HTTPS-only enforcement with hostname validation",
             "Safe XML parsing using defusedxml"
         ],
         "status": "available",
