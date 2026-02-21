@@ -26,5 +26,21 @@
         ],
         "status": "available",
         "url": "https://clawhub.ai/zororaka00/idx-stock"
+    },
+    {
+        "name": "r2-cli",
+        "short_desc": "Cloudflare R2 storage CLI tool",
+        "category": "utilities",
+        "icon": "☁️",
+        "back_title": "Cloudflare R2 CLI",
+        "features": [
+            "Upload, download, list, and delete objects",
+            "AWS Signature V4 compatible authentication",
+            "Secure credential handling via environment variables",
+            "HTTPS-only enforcement with hostname validation",
+            "Safe XML parsing using defusedxml"
+        ],
+        "status": "available",
+        "url": "https://clawhub.ai/zororaka00/r2-cli"
     }
 ]
