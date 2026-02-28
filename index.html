@@ -1,80 +1,662 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Title & Description for SEO -->
-    <title>Sinkron Skills - Explore Innovative ClawHub Skills by Web3 Hungry</title>
-    <meta name="description"
-        content="Discover a showcase of amazing AI-powered skills created by Web3 Hungry on ClawHub. Explore utilities for finance, productivity, privacy, and more.">
-
-    <!-- Keywords for SEO (optional, but can help with older engines) -->
-    <meta name="keywords"
-        content="ClawHub skills, AI tools, Web3 Hungry, temporary email, stock scraper, IDX profile, automation, privacy">
-
-    <!-- Robots Meta Tag (allow indexing) -->
+    
+    <!-- Primary Meta Tags -->
+    <title>Sinkron - Email for AI Agent</title>
+    <meta name="title" content="Sinkron - Email for AI Agent">
+    <meta name="description" content="Sinkron provides temporary email addresses for AI agent and automation. Create instant disposable inboxes, receive emails with attachments, and build powerful agent workflows.">
+    <meta name="keywords" content="temporary email, disposable email, AI agent email, automation email, email API, temporary inbox, email for bots, API email service">
+    <meta name="author" content="Sinkron">
     <meta name="robots" content="index, follow">
-
-    <!-- Canonical URL (replace with actual URL) -->
-    <link rel="canonical" href="https://www.sinkron.id/">
-
-    <!-- Favicon (add your favicon files) -->
-    <link rel="icon" href="logo.png" type="image/x-icon">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sinkron.id/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
     <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
-
-    <!-- Open Graph Meta Tags for Social Sharing (Facebook, LinkedIn, etc.) -->
-    <meta property="og:title" content="Sinkron Skills - Explore Amazing ClawHub Skills">
-    <meta property="og:description"
-        content="A curated showcase of innovative skills built by Web3 Hungry, including MailTap for temporary emails and IDX Stock for company profiles.">
-    <meta property="og:image" content="https://www.sinkron.id/og-logo.jpg"> <!-- Replace with actual image URL -->
-    <meta property="og:url" content="https://www.sinkron.id/">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Sinkron.id">
-
-    <!-- Twitter/X Meta Tags for Cards -->
+    <meta property="og:url" content="https://sinkron.id/">
+    <meta property="og:title" content="Sinkron - Email for AI Agent">
+    <meta property="og:description" content="Create instant temporary email addresses for your AI agent. Receive emails with attachments, build powerful automation workflows with our simple API.">
+    <meta property="og:image" content="https://sinkron.id/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Sinkron">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:alt" content="Sinkron - Email for AI Agent">
+    
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sinkron Skills - ClawHub Showcase by Web3 Hungry">
-    <meta name="twitter:description" content="Explore AI skills for productivity and finance, created by @web3hungry.">
-    <meta name="twitter:image" content="https://www.sinkron.id/og-logo.jpg">
-    <!-- Replace with actual image URL -->
-    <meta name="twitter:site" content="@web3hungry"> <!-- Your X handle -->
-    <meta name="twitter:creator" content="@web3hungry">
+    <meta name="twitter:site" content="@sinkron">
+    <meta name="twitter:creator" content="@sinkron">
+    <meta name="twitter:url" content="https://sinkron.id/">
+    <meta name="twitter:title" content="Sinkron - Email for AI Agent">
+    <meta name="twitter:description" content="Create instant temporary email addresses for your AI agent. Receive emails with attachments, build powerful automation workflows with our simple API.">
+    <meta name="twitter:image" content="https://sinkron.id/og-image.png">
+    <meta name="twitter:image:alt" content="Sinkron - Email for AI Agent">
+    
+    <!-- LinkedIn -->
+    <meta property="linkedin:owner" content="Sinkron">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#6366f1">
+    <meta name="msapplication-TileColor" content="#6366f1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="generator" content="Sinkron">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://font.googleapis.com">
+    <link rel="preconnect" href="https://font.gstatic.com" crossorigin>
+    <link href="https://font.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --primary-light: #818cf8;
+            --secondary: #10b981;
+            --dark: #0f172a;
+            --dark-secondary: #1e293b;
+            --gray: #64748b;
+            --light: #f8fafc;
+            --white: #ffffff;
+            --gradient-1: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --gradient-2: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+        }
 
-    <!-- Additional SEO Enhancements -->
-    <meta name="author" content="Web3 Hungry">
-    <meta name="theme-color" content="#1a1a2e"> <!-- Matches template background -->
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark);
+            color: var(--white);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Background Effects */
+        .bg-effects {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-event: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .bg-effects::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(16, 185, 129, 0.08) 0%, transparent 40%);
+            animation: bgPulse 15s ease-in-out infinite;
+        }
+
+        @keyframes bgPulse {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(-2%, 2%) rotate(1deg); }
+            66% { transform: translate(2%, -2%) rotate(-1deg); }
+        }
+
+        /* Floating Orbs */
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.4;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .orb-1 {
+            width: 300px;
+            height: 300px;
+            background: var(--primary);
+            top: 10%;
+            right: 10%;
+            animation-delay: 0s;
+        }
+
+        .orb-2 {
+            width: 200px;
+            height: 200px;
+            background: var(--secondary);
+            bottom: 20%;
+            left: 5%;
+            animation-delay: -7s;
+        }
+
+        .orb-3 {
+            width: 150px;
+            height: 150px;
+            background: #8b5cf6;
+            top: 50%;
+            left: 30%;
+            animation-delay: -14s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) scale(1); }
+            25% { transform: translateY(-20px) scale(1.02); }
+            50% { transform: translateY(0) scale(1); }
+            75% { transform: translateY(20px) scale(0.98); }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), transparent);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: logoFloat 3s ease-in-out infinite;
+        }
+
+        @keyframes logoFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+
+        .logo-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 6rem 2rem 3rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(99, 102, 241, 0.15);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 50px;
+            font-size: 0.875rem;
+            color: var(--primary-light);
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .badge-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--secondary);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease 0.1s forwards;
+            opacity: 0;
+        }
+
+        .hero-title span {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: var(--gray);
+            max-width: 600px;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+            animation: fadeInUp 0.8s ease 0.2s forwards;
+            opacity: 0;
+        }
+
+        /* Instructions Section */
+        .instructions {
+            padding: 3rem 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .instruction-card {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        .instruction-card:hover {
+            border-color: rgba(99, 102, 241, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: var(--gradient-1);
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+
+        .instruction-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .instruction-desc {
+            color: var(--gray);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .command-box {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 0.9rem;
+            color: var(--primary-light);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .command-box code {
+            flex: 1;
+            text-align: left;
+        }
+
+        .copy-hint {
+            font-size: 0.75rem;
+            color: var(--gray);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .example-box {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .example-label {
+            font-size: 0.75rem;
+            color: var(--secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .example-text {
+            color: var(--white);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 3rem 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-label {
+            font-size: 0.875rem;
+            color: var(--secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            color: var(--gray);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-1);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(99, 102, 241, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-card:hover::before {
+            opacity: 0.05;
+        }
+
+        .feature-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--gradient-1);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .feature-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-desc {
+            color: var(--gray);
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: var(--gray);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+            }
+
+            .hero {
+                padding: 5rem 1.5rem 2rem;
+            }
+
+            .features, .instructions {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .instruction-card {
+                padding: 1.25rem;
+            }
+        }
+
+        /* Stagger animations for features */
+        .feature-card:nth-child(1) { animation: fadeInUp 0.6s ease 0.1s forwards; opacity: 0; }
+        .feature-card:nth-child(2) { animation: fadeInUp 0.6s ease 0.2s forwards; opacity: 0; }
+        .feature-card:nth-child(3) { animation: fadeInUp 0.6s ease 0.3s forwards; opacity: 0; }
+    </style>
 </head>
-
 <body>
-    <header>
-        <h1>Sinkron Skills</h1>
-        <p>Explore amazing skills created by Web3 Hungry</p>
-    </header>
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
 
-    <section class="search-section">
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search skills...">
-            <span class="search-icon">🔍</span>
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">
+            <img src="logo.png" alt="Sinkron" style="width: 40px; height: 40px; border-radius: 10px;">
+            Sinkron
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="badge">
+            <span class="badge-dot"></span>
+            Email for Agent
+        </div>
+        <h1 class="hero-title">
+            Permanent Email<br>
+            <span>For Your Agent</span>
+        </h1>
+        <p class="hero-subtitle">
+            Give your agent permanent email addresses. 
+            Let agent install and use their own email through Clawhub.
+        </p>
+    </section>
+
+    <!-- Instructions Section -->
+    <section class="instructions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">How It Work</span>
+                <h2 class="section-title">Install & Use</h2>
+            </div>
+
+            <div class="instruction-card">
+                <div class="step-number">1</div>
+                <h3 class="instruction-title">Install Sinkron</h3>
+                <p class="instruction-desc">
+                    Your agent install Sinkron skill. This gives them the ability to use permanent email addresses.
+                </p>
+                <div class="command-box">
+                    <code>clawhub install sinkron</code>
+                </div>
+            </div>
+
+            <div class="instruction-card">
+                <div class="step-number">2</div>
+                <h3 class="instruction-title">Register Agent Email</h3>
+                <p class="instruction-desc">
+                    The agent registers with their chosen username and name to get a permanent email address.
+                </p>
+                <div class="example-box">
+                    <div class="example-label">Example</div>
+                    <div class="example-text">
+                        Agent runs: sinkron register --username john --name "John Doe"<br>
+                        Gets: john@sinkron.id
+                    </div>
+                </div>
+            </div>
+
+            <div class="instruction-card">
+                <div class="step-number">3</div>
+                <h3 class="instruction-title">Start Using Email</h3>
+                <p class="instruction-desc">
+                    Once registered, the agent can check inbox, read messages, and manage attachment using their permanent email address.
+                </p>
+                <div class="example-box">
+                    <div class="example-label">Available Commands</div>
+                    <div class="example-text">
+                        • sinkron inbox - View messages<br>
+                        • sinkron check [address] - Check if email exists<br>
+                        • sinkron message [id] - Read specific message
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <main class="skills-grid" id="skillsGrid">
-        <!-- Skills will be dynamically inserted here from skills.json -->
-    </main>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why Sinkron?</span>
+                <h2 class="section-title">Built for Agent</h2>
+                <p class="section-subtitle">
+                    Everything your agent needs for permanent email communication
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </div>
+                    <h3 class="feature-title">Permanent Addresses</h3>
+                    <p class="feature-desc">
+                        Each agent gets a permanent email address that never expires. All messages stored forever.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                    </div>
+                    <h3 class="feature-title">Search Messages</h3>
+                    <p class="feature-desc">
+                        Find any message instantly. Search across subjects, senders, and message content.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+                    </div>
+                    <h3 class="feature-title">Secure Attachment</h3>
+                    <p class="feature-desc">
+                        All attachment stored securely. Only the agent owner can access their files.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer>
-        <p class="creator">
-            Created by <a href="https://clawhub.ai/u/zororaka00" target="_blank">Web3 Hungry</a>
-        </p>
+        <p>© 2026 Sinkron. Email for Agent.</p>
+        <p style="margin-top: 0.5rem;">Created by <a href="https://x.com/web3hungry" target="_blank" rel="noopener noreferrer" style="color: var(--primary-light); text-decoration: none;">web3hungry</a></p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
-
 </html>
