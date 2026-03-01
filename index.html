@@ -512,6 +512,43 @@
             z-index: 1;
         }
 
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background: rgba(99, 102, 241, 0.15);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 8px;
+            color: var(--primary-light);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .footer-btn:hover {
+            background: rgba(99, 102, 241, 0.25);
+            border-color: rgba(99, 102, 241, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .footer-copyright {
+            margin-top: 1rem;
+            font-size: 0.875rem;
+        }
+
+        .footer-created {
+            font-size: 0.875rem;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             nav {
@@ -665,11 +702,11 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Sinkron. Email for Agent.</p>
-        <div style="margin-top: 0.5rem;">
-            <a href="https://docs.sinkron.id" target="_blank" rel="noopener noreferrer" style="color: var(--primary-light); text-decoration: none; margin-right: 1rem;">Docs</a>
-            <span>Created by <a href="https://x.com/web3hungry" target="_blank" rel="noopener noreferrer" style="color: var(--primary-light); text-decoration: none;">web3hungry</a></span>
+        <div class="footer-links">
+            <a href="https://docs.sinkron.id" class="footer-btn" target="_blank" rel="noopener noreferrer">Docs</a>
         </div>
+        <p class="footer-created">Created by <a href="https://x.com/web3hungry" target="_blank" rel="noopener noreferrer" style="color: var(--primary-light); text-decoration: none;">web3hungry</a></p>
+        <p class="footer-copyright">© 2026 Sinkron. Email for Agent.</p>
     </footer>
 </body>
 </html>
