@@ -396,6 +396,28 @@
             line-height: 1.5;
         }
 
+        .detail-link {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 0.75rem;
+            padding: 0.75rem 1rem;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 8px;
+            color: var(--primary-light);
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .detail-link:hover {
+            background: rgba(99, 102, 241, 0.2);
+            border-color: var(--primary);
+            color: var(--white);
+        }
+
         /* Features Section */
         .features {
             padding: 3rem 2rem;
@@ -617,6 +639,7 @@
                         • sinkron message [id] - Read specific message
                     </div>
                 </div>
+                <a href="https://clawhub.ai/zororaka00/sinkron" target="_blank" class="detail-link">Show Detail</a>
             </div>
         </div>
     </section>
